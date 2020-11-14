@@ -5,35 +5,8 @@ background: linear-gradient(
      #F3D5AD
     ) fixed;
 }
-#main-card {
-    height: 80vh;
-    width: 110vh;
-    background-color: white;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 40%;
-}
-#main-card:hover{
-    opacity: 30%;
-    filter: drop-shadow(10px 10px 10px #000000);
-}
-#placeholder {
-    height: 80vh;
-    width: 110vh;
-    background-color: white;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 0%;
-}
-.titles {
+
+#titles {
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     opacity: 80%;
@@ -41,17 +14,29 @@ background: linear-gradient(
     font-size: 32px;
     font-weight: bold;
 }
-.footer-container {
+#index-title {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 80%;
+    font-size: 32px;
+    font-weight: bold;
+    position: fixed;
+    top: 2.2%;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+#footer-container {
     position: fixed;
     top: 93%;
     left: 50%;
     transform: translateX(-50%);
 }
-a {
+#links {
     color: white;
     text-decoration: none;
 }
-a:hover{
+#links:hover{
     opacity: 70%;
     text-decoration: underline;
 }

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <title>Emily's Portfolio</title>
+    <title>emily's portfolio</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
-
     <style>
         .carousel-item {
             height: 70vh;
@@ -19,17 +21,30 @@
             background-size: cover;
         }
         .container {
-            position: absolute;
+            position: fixed;
             bottom: 0;
-            left: 0;
+            left: 10%;
             right: 0;
             padding-bottom: 100px;
         }
         .carousel-inner {
-            bottom:-135px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
         }
         .carousel-indicators {
-            bottom: -120px;
+            position: fixed;
+            bottom: 15%
+        }
+        .carousel-control-prev{
+            position: fixed;
+            bottom: 10%;
+        }
+        .carousel-control-next{
+            position: fixed;
+            bottom: 10%;
         }
         .img1{
             background-image: url(https://i.pinimg.com/originals/9c/98/14/9c98141475e3372956e1b3738bfec143.jpg);
@@ -50,7 +65,7 @@
     </style>
 </head>
     <div class="mobileShow">
-    haha mb forgot to make this part of the site mb, maybe open it up on your comp
+    haha whoop forgot to make this part of the site mb, maybe open it up on your computer
     </div>
 <body>
     <div class="mobileHide">
@@ -59,10 +74,10 @@
     </h1>
     <div id= "myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target = "myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target = "myCarousel" data-slide-to="1"></li>
-        </ol>
-        
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+
         <div class="carousel-inner">
  <!-- Add more slides, just make sure to add another list element -->
             <div class="carousel-item active img1">

@@ -85,7 +85,7 @@ p
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  position: absolute;;
+  position: absolute;
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -100,13 +100,14 @@ p
 .property-image
 {
   height:18em;
-  width:14em;
+  width:12em;
   padding:1em 2em;
   position:Absolute;
   top:0px;
   background-image: url(images/catboy.png);
   background-size:cover;
   background-repeat:no-repeat;
+  
 }
 /* Bottom Card Section */
 
@@ -114,7 +115,7 @@ p
 {
   background-color: #FAFAFC;
   height:12em;
-  width:14em;
+  width:12em;
   position:absolute;
   bottom:0em;
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -302,4 +303,78 @@ i {
 .container-contact a {
   text-decoration: none;
   color: #414141;
+}
+/* about page styles */
+#card-body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+#top-banner {
+  width: 100%;
+  box-sizing: block;
+  position: fixed;
+  top: 15vh;
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  position: fixed;
+  left: 33.3%;
+  width: 33.3%;
+  top: 55%;
+  padding: 0 8px;
+  background-color: #0F4C81;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:  #0F4C81;
+  color: white;
+}
+
+.container-about {
+  padding: 0 16px;
+  background-color: #0F4C81;
+}
+
+.container-about::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title-about {
+  color: grey;
+}
+
+.button-about {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-about:hover {
+  background-color: #555;
+  text-emphasis-color: #4078c0;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }

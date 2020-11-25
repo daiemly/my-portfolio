@@ -175,13 +175,12 @@ p
 }
 
 .container-contact {
-  width: 1000px;
-  position: fixed;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  left: 15%;
+  justify-content: space-evenly;
+  position: fixed;
   top: 25%;
-  
+ 
 }
 
 .container-contact .card {
@@ -281,7 +280,7 @@ i {
 
 .container-contact .card:hover .face.face2{
   transform: translateY(0);
-  box-shadow: 10px px #0F4C81;
+  box-shadow: 10px 10px #0F4C81;
 }
 
 .container-contact .card .face.face2 .content p {
@@ -312,11 +311,10 @@ i {
 }
 
 #top-banner {
-  width: 100%;
-  box-sizing: block;
+  width: 99%;
+  box-sizing: border-box;
   position: fixed;
   top: 15vh;
-  
 }
 
 *, *:before, *:after {
